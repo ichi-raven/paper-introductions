@@ -1,0 +1,3 @@
+[submodule "ThirdParty/typst_slide_template"]
+	path = ThirdParty/typst_slide_template
+	url = https://github.com/chantakan/typst_slide_template
