@@ -84,3 +84,5 @@
     #text(size: 13pt, style: "italic")[#footnote]
   ]
 }
+
+#let caption(body) = text(size: 12pt, fill: gray, body)
