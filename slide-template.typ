@@ -4,6 +4,7 @@
 #let green-main = rgb("#00B050")
 #let font-name = "Yu Gothic"
 
+
 // 通常スライドマクロ
 #let slide(title: "", body) = {
   pagebreak()
@@ -35,9 +36,10 @@
         )[
           #align(horizon)[
             #context {
-              box(stroke: white + 1pt, inset: (x: 8pt, y: 4pt))[
-                #text(size: 13pt)[《#here().page()》]
-              ]
+              text(size: 13pt)[《#here().page()》]
+              // box(stroke: white + 1pt, inset: (x: 8pt, y: 4pt))[
+                
+              // ]
             }
           ]
         ],
@@ -49,7 +51,7 @@
   // コンテンツエリア
   block(
     width: 100%, height: 100%,
-    stroke: (paint: rgb("#aaaaaa"), thickness: 1pt, dash: "dashed"),
+    //stroke: (paint: rgb("#aaaaaa"), thickness: 1pt, dash: "dashed"),
     inset: 20pt,
   )[#body]
 }
